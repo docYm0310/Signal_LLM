@@ -1,0 +1,14 @@
+python main.py \
+    --dataset_dir "../data_radar_34_512/trainData" \
+    --bert_model_path "../Signal_LLM_Pretrain_Pos/save/INFO_202505131619_50_256_0.0001_256_8_LOSS0.0030009488008624114/model/epoch44_best_model.pth" \
+    --num_epochs 50 \
+    --batch_size 256 \
+    --num_class 34 \
+    --lr 1e-4 \
+    --window 256 \
+    --segment_length 8 \
+    --random_cut 20 \
+    --random_windows \
+    --add_noise \
+    --noise_snr 20 \
+    --device 3

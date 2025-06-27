@@ -1,0 +1,16 @@
+python main.py \
+    --dataset_dir "../data_radar_34_512/trainData" \
+    --num_epochs 50 \
+    --batch_size 256 \
+    --lr 1e-4 \
+    --window 256 \
+    --segment_length 8 \
+    --random_cut 20 \
+    --random_windows \
+    --add_noise \
+    --noise_snr 20 \
+    --device 3 \
+    --non_mask_loss_weight 0 \
+    --combined_loss_radio 1 \
+    --non_mask_loss \
+    --mask_ratio 0.25
